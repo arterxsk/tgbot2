@@ -9,7 +9,7 @@
 | It can be obtained from https://telegram.dog/BotFather
 |
 */
-$config['botToken'] = "6253592246:AAEzmByVTOrlU_3OR58bxryh-pxPEW6eiUE";
+$config['botToken'] = "6253592246:AAF8EArEo58hjxccQ5MzEZuKzHgfyYjW90c";
 
 /*
 |--------------------------------------------------------------------------
