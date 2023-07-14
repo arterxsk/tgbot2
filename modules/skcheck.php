@@ -17,7 +17,7 @@ include_once __DIR__."/../functions/functions.php";
 
 
 ////////////====[MUTE]====////////////
-if(strpos($message, "/key ") === 0 || strpos($message, "!key ") === 0){   
+if(strpos($message, "/sk ") === 0 || strpos($message, "!sk ") === 0){   
     $antispam = antispamCheck($userId);
     addUser($userId);
     
@@ -99,9 +99,7 @@ Time -» <b>$time</b><b>s</b></b>
           bot('editMessageText',[
             'chat_id'=>$chat_id,
             'message_id'=>$messageidtoedit,
-            'text'=>"<b>Never Gonna Give you Up!
-
-Provide a Valid SK KEYYYY!</b>",
+            'text'=>"<b>Provide a Valid SK KEYYYY!</b>",
             'parse_mode'=>'html',
             'disable_web_page_preview'=>'true'
             
