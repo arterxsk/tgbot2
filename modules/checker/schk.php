@@ -17,7 +17,7 @@ include_once __DIR__."/../functions/functions.php";
 
 
 ////////////====[MUTE]====////////////
-if(strpos($message, "/schk ") === 0 || strpos($message, "!schk ") === 0){   
+if(strpos($message, "/sc ") === 0 || strpos($message, "!sc ") === 0){   
     $antispam = antispamCheck($userId);
     addUser($userId);
     
