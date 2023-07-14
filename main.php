@@ -76,14 +76,14 @@ if (strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0) {
 }
 
 if ($data == "back") {
- bot('editMessageText', [
-  'chat_id' => $callbackchatid,
-  'message_id' => $callbackmessageid,
-  'text' => "<b>Which commands would you like to check?</b>",
-  'parse_mode' => 'html',
-  'reply_markup' => json_encode(['inline_keyboard' => [
-   [['text' => "💳 CC Checker Gates", 'callback_data' => "checkergates"]], [['text' => "🛠 Other Commands", 'callback_data' => "othercmds"]],
-  ], 'resize_keyboard' => true])
+ bot('sendmessage', [
+   'chat_id' => $chat_id,
+   'text' => "<b>Available Commands</b>",
+   'parse_mode' => 'html',
+   'reply_to_message_id' => $message_id,
+   'reply_markup' => json_encode(['inline_keyboard' => [
+    [['text' => "Gates", 'callback_data' => "checkergates"]], [['text' => "Other Commands", 'callback_data' => "othercmds"]],
+   ], 'resize_keyboard' => true])
  ]);
 }
 
