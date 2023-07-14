@@ -77,13 +77,13 @@ if (strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0) {
 
 if ($data == "back") {
  bot('sendmessage', [
-   'chat_id' => $chat_id,
-   'text' => "<b>Available Commands</b>",
-   'parse_mode' => 'html',
-   'reply_to_message_id' => $message_id,
-   'reply_markup' => json_encode(['inline_keyboard' => [
-    [['text' => "Gates", 'callback_data' => "checkergates"]], [['text' => "Other Commands", 'callback_data' => "othercmds"]],
-   ], 'resize_keyboard' => true])
+  'chat_id' => $chat_id,
+  'text' => "<b>Available Commands</b>",
+  'parse_mode' => 'html',
+  'reply_to_message_id' => $message_id,
+  'reply_markup' => json_encode(['inline_keyboard' => [
+   [['text' => "Gates", 'callback_data' => "checkergates"]], [['text' => "Other Commands", 'callback_data' => "othercmds"]],
+  ], 'resize_keyboard' => true])
  ]);
 }
 
@@ -91,10 +91,9 @@ if ($data == "checkergates") {
  bot('editMessageText', [
   'chat_id' => $callbackchatid,
   'message_id' => $callbackmessageid,
-  'text' => "<b>━━CC Checker Gates━━</b>
-<b>/ss | !ss - Stripe [Auth]</b>
-<b>/sm | !sm - Stripe [Merchant]</b>
-<b>/schk | !schk - User Stripe Merchant [Needs SK]</b>
+  'text' => "<b>━━ GATES ━━</b>
+<b>/si | !si - Stripe [Intent]</b>
+<b>/sc | !sc - SK Charge [Need SK]</b>
 
 <b>/apikey sk_live_xxx - Add SK Key for /schk gate</b>
 <b>/myapikey | !myapikey - View the added SK Key for /schk gate</b>
