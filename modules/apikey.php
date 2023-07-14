@@ -18,7 +18,7 @@ include_once __DIR__."/../functions/functions.php";
 
 
 ////////////====[API KEY]====////////////
-if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){   
+if(strpos($message, "/addsk ") === 0 || strpos($message, "!addsk ") === 0){   
     $antispam = antispamCheck($userId);
     addUser($userId);
     
@@ -74,8 +74,8 @@ if(strpos($message, "/apikey ") === 0 || strpos($message, "!apikey ") === 0){
                 bot('editMessageText',[
                     'chat_id'=>$chat_id,
                     'message_id'=>$messageidtoedit,
-                    'text'=>"<b>✅ Successfully Added Your API Key!
-You can now check cards using /schk</b>",
+                    'text'=>"<b>Successfully Added Your Stripe Key!
+You can now check cards using /sc command.</b>",
                     'parse_mode'=>'html',
                     'disable_web_page_preview'=>'true'
                     
@@ -102,7 +102,7 @@ You can now check cards using /schk</b>",
             bot('editMessageText',[
                 'chat_id'=>$chat_id,
                 'message_id'=>$messageidtoedit,
-                'text'=>"<b>Cool! Fucking provide a SK Key!</b>",
+                'text'=>"<b>You don't provide anything.</b>",
                 'parse_mode'=>'html',
                 'disable_web_page_preview'=>'true'
                 
@@ -112,7 +112,7 @@ You can now check cards using /schk</b>",
 }
 
 ////////////====[MY API KEY]====////////////
-if(strpos($message, "/myapikey") === 0 || strpos($message, "!myapikey") === 0){   
+if(strpos($message, "/mysk") === 0 || strpos($message, "!mysk") === 0){   
     $antispam = antispamCheck($userId);
     addUser($userId);
     
