@@ -70,7 +70,7 @@ if (strpos($message, "/sk ") === 0 || strpos($message, "!sk ") === 0) {
      'message_id' => $messageidtoedit,
      'text' => "<b>SK Key:</b> <code>$skhidden</code>
 <b>Status -» Auth Pass ✅
-Response -» Provided Secret Key is Alive
+Response -» Provided Secret Key is Alive.
 Time -» <b>$time</b><b>s</b></b>
 
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
@@ -85,7 +85,7 @@ Time -» <b>$time</b><b>s</b></b>
      'message_id' => $messageidtoedit,
      'text' => "<b>SK Key:</b> <code>$skhidden</code>
 <b>Status -» Auth Fail ❌
-Response -» Provided Secret Key is Dead
+Response -» Provided Secret Key is Dead.
 Time -» <b>$time</b><b>s</b></b>
 
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
