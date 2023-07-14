@@ -137,7 +137,7 @@ if (strpos($message, "/sc ") === 0 || strpos($message, "!sc ") === 0) {
      'text' => "<b>Card:</b> <code>$lista</code>
 <b>Status -» Dead ❌
 Response -» <code>SK Key is Dead</code>
-Gateway -» SK Charge
+Gateway -» User Own SK
 Time -» <b>$time</b><b>s</b>
 
 ------- Bin Info -------</b>
@@ -205,7 +205,7 @@ Time -» <b>$time</b><b>s</b>
      'text' => "<b>Card:</b> <code>$lista</code>
 <b>Status -» Approved ✅
 Response -» $stripemessage
-Gateway -» SK Charge
+Gateway -» User Own SK
 Time -» <b>$time</b><b>s</b>
 
 ------- Bin Info -------</b>
@@ -233,7 +233,7 @@ Time -» <b>$time</b><b>s</b>
      'text' => "<b>Card:</b> <code>$lista</code>
 <b>Status -» Dead ❌
 Response -» <code>$stripemessage</code>
-Gateway -» SK Charge
+Gateway -» User Own SK
 Time -» <b>$time</b><b>s</b>
 
 ------- Bin Info -------</b>
