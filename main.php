@@ -68,7 +68,7 @@ if (strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0) {
    'parse_mode' => 'html',
    'reply_to_message_id' => $message_id,
    'reply_markup' => json_encode(['inline_keyboard' => [
-    [['text' => "Gates", 'callback_data' => "checkergates"]], [['text' => "Other Commands", 'callback_data' => "othercmds"]],
+    [['text' => "Commands", 'callback_data' => "checkergates"]], [['text' => "Other Commands", 'callback_data' => "othercmds"]],
    ], 'resize_keyboard' => true])
   ]);
  }
@@ -82,7 +82,7 @@ if ($data == "back") {
   'parse_mode' => 'html',
   'reply_to_message_id' => $message_id,
   'reply_markup' => json_encode(['inline_keyboard' => [
-   [['text' => "Gates", 'callback_data' => "checkergates"]],
+   [['text' => "Commands", 'callback_data' => "checkergates"]],
   ], 'resize_keyboard' => true])
  ]);
 }
@@ -91,7 +91,7 @@ if ($data == "checkergates") {
  bot('editMessageText', [
   'chat_id' => $callbackchatid,
   'message_id' => $callbackmessageid,
-  'text' => "<b>━━ GATES ━━</b>
+  'text' => "<b>━━ COMMANDS ━━</b>
 <b>/si | !si - Stripe [Intent]</b>
 <b>/sc | !sc - SK Charge [Need SK]</b>
 
