@@ -199,7 +199,7 @@ Time -» <b>$time</b><b>s</b>
      'text' => "<b>Card:</b> <code>$lista</code>
 <b>Status -» Approved ✅
 Response -» $stripemessage
-Gateway -» User Stripe Merchant
+Gateway -» Stripe Auth
 Time -» <b>$time</b><b>s</b>
 
 ------- Bin Info -------</b>
@@ -227,7 +227,7 @@ Time -» <b>$time</b><b>s</b>
      'text' => "<b>Card:</b> <code>$lista</code>
 <b>Status -» Dead ❌
 Response -» <code>$stripemessage</code>
-Gateway -» Stripe Auth 1
+Gateway -» Stripe Auth
 Time -» <b>$time</b><b>s</b>
 
 ------- Bin Info -------</b>
