@@ -16,7 +16,7 @@ $config['botToken'] = "6088551496:AAGWlTyGPz4Q8le5ishzWmAIra_kFcZd4fE";
 | Admin User ID
 |--------------------------------------------------------------------------
 |
-| Change this to Admin's Numeric User 
+| Change this to Admin's Numeric User
 | ID can be obtained from https://telegram.dog/username_to_id_bot
 |
 */
@@ -31,7 +31,7 @@ $config['adminID'] = "5126174674";
 | ID can be obtained from https://telegram.dog/BotFather
 |
 */
-$config['logsID'] =  "-1001898235630";
+$config['logsID'] = "-1001898235630";
 
 /*
 |--------------------------------------------------------------------------
@@ -43,7 +43,7 @@ $config['logsID'] =  "-1001898235630";
 | By Default it's in IST
 |
 */
-$config['timeZone'] =  "Asia/Kyoto";
+$config['timeZone'] = "Asia/Kyoto";
 
 /*
 |--------------------------------------------------------------------------
@@ -52,10 +52,10 @@ $config['timeZone'] =  "Asia/Kyoto";
 | Database to Store User Data
 |
 */
-$config['db']['hostname'] =  "sql12.freesqldatabase.com";
-$config['db']['username'] =  "sql12622901";
-$config['db']['password'] =  "aNhsnKYBYu";
-$config['db']['database'] =  "sql12622901";
+$config['db']['hostname'] = "sql12.freesqldatabase.com";
+$config['db']['username'] = "sql12622901";
+$config['db']['password'] = "aNhsnKYBYu";
+$config['db']['database'] = "sql12622901";
 
 /*
 |--------------------------------------------------------------------------
@@ -66,7 +66,7 @@ $config['db']['database'] =  "sql12622901";
 | Value is in Seconds. "20" = 20seconds
 |
 */
-$config['anti_spam_timer'] =  "20";
+$config['anti_spam_timer'] = "60";
 
 /*
 |--------------------------------------------------------------------------
@@ -78,5 +78,5 @@ $config['anti_spam_timer'] =  "20";
 | array('sk1','sk2','sk3')
 |
 */
-$config['sk_keys'] =  array('sk_live_69GKI0saLB8uIEnxzv8VTvRX');
+$config['sk_keys'] = array('sk_live_69GKI0saLB8uIEnxzv8VTvRX');
 ?>
