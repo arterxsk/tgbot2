@@ -64,7 +64,7 @@ if (strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0) {
  if (!isBanned($userId) && !isMuted($userId)) {
   bot('sendmessage', [
    'chat_id' => $chat_id,
-   'text' => "<b>Available Commands</b>",
+   'text' => "<b>Hello, A little reminder that I’m still in the development process. Some of my commands might work or not.</b>",
    'parse_mode' => 'html',
    'reply_to_message_id' => $message_id,
    'reply_markup' => json_encode(['inline_keyboard' => [
@@ -78,7 +78,7 @@ if (strpos($message, "/cmds") === 0 || strpos($message, "!cmds") === 0) {
 if ($data == "back") {
  bot('sendmessage', [
   'chat_id' => $chat_id,
-  'text' => "<b>Available Commands</b>",
+  'text' => "<b>Hello, A little reminder that I’m still in the development process. Some of my commands might work or not.</b>",
   'parse_mode' => 'html',
   'reply_to_message_id' => $message_id,
   'reply_markup' => json_encode(['inline_keyboard' => [
