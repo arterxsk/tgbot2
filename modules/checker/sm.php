@@ -117,7 +117,7 @@ if (strpos($message, "/si ") === 0 || strpos($message, "!si ") === 0) {
    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
    curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
    curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
-   curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&owner[name]=Aju Bose&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mon.'&card[exp_year]='.$year);
+   curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&owner[name]=James Yap&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mon.'&card[exp_year]='.$year);
    $result = curl_exec($ch);
 
    if (strpos($result, 'error')) {
@@ -128,7 +128,7 @@ if (strpos($message, "/si ") === 0 || strpos($message, "!si ") === 0) {
      'text' => "<b>Card:</b> <code>$lista</code>
 <b>Status -» Dead ❌
 Response -» <code>$stripemessage</code>
-Gateway -» Stripe Auth 1
+Gateway -» Stripe Auth
 Time -» <b>$time</b><b>s</b>
 
 ------- Bin Info -------</b>
@@ -165,7 +165,7 @@ Time -» <b>$time</b><b>s</b>
    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
    curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
    curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
-   curl_setopt($ch, CURLOPT_POSTFIELDS, 'description=Aju Bose&source='.$id);
+   curl_setopt($ch, CURLOPT_POSTFIELDS, 'description=isnotdev depo&source='.$id);
    $result1 = curl_exec($ch);
    $info = curl_getinfo($ch);
    $time = $info['total_time'];
