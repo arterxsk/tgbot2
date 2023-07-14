@@ -82,7 +82,7 @@ if ($data == "back") {
   'parse_mode' => 'html',
   'reply_to_message_id' => $message_id,
   'reply_markup' => json_encode(['inline_keyboard' => [
-   [['text' => "Gates", 'callback_data' => "checkergates"]], [['text' => "Other Commands", 'callback_data' => "othercmds"]],
+   [['text' => "Gates", 'callback_data' => "checkergates"]],
   ], 'resize_keyboard' => true])
  ]);
 }
@@ -98,27 +98,7 @@ if ($data == "checkergates") {
 <b>/addsk sk_live_xxx - Add SK Key for /sc gate.</b>
 <b>/mysk | !mysk - View the added SK Key for /sc gate.</b>
 
-<b>ϟ Join <a href='t.me/pyLeads'>pyLeads</a></b>",
-  'parse_mode' => 'html',
-  'disable_web_page_preview' => true,
-  'reply_markup' => json_encode(['inline_keyboard' => [
-   [['text' => "Return", 'callback_data' => "back"]]
-  ], 'resize_keyboard' => true])
- ]);
-}
-
-
-if ($data == "othercmds") {
- bot('editMessageText', [
-  'chat_id' => $callbackchatid,
-  'message_id' => $callbackmessageid,
-  'text' => "<b>━━Other Commands━━</b>
-<b>/me | !me</b> - Your Info
-<b>/stats | !stats</b> - Checker Stats
-<b>/key | !key</b> - SK Key Checker
-<b>/bin | !bin</b> - Bin Lookup
-<b>/iban | !iban</b> - IBAN Checker
-  <b>ϟ Join <a href='t.me/pyLeads'>pyLeads</a></b>",
+<b>Owner » <a href='t.me/isnotdev'>isnotdev</a></b>",
   'parse_mode' => 'html',
   'disable_web_page_preview' => true,
   'reply_markup' => json_encode(['inline_keyboard' => [
