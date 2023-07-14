@@ -96,7 +96,7 @@ if ($data == "checkergates") {
 <b>/sc | !sc - SK Charge [Need SK]</b>
 
 <b>/addsk sk_live_xxx - Add SK Key for /sc gate.</b>
-<b>/mysk | !mysk - View the added SK Key for /schk gate</b>
+<b>/mysk | !mysk - View the added SK Key for /sc gate.</b>
 
 <b>ϟ Join <a href='t.me/pyLeads'>pyLeads</a></b>",
   'parse_mode' => 'html',
