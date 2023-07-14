@@ -257,7 +257,7 @@ Time -» <b>$time</b><b>s</b>
    bot('editMessageText', [
     'chat_id' => $chat_id,
     'message_id' => $messageidtoedit,
-    'text' => "<b>Cool! Fucking provide a CC to Check!!</b>",
+    'text' => "<b>You don't provide anything.</b>",
     'parse_mode' => 'html',
     'disable_web_page_preview' => 'true'
 
