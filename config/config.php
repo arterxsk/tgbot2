@@ -52,10 +52,10 @@ $config['timeZone'] = "Asia/Kyoto";
 | Database to Store User Data
 |
 */
-$config['db']['hostname'] = "sql12.freesqldatabase.com";
-$config['db']['username'] = "sql12622901";
-$config['db']['password'] = "aNhsnKYBYu";
-$config['db']['database'] = "sql12622901";
+$config['db']['hostname'] = "sqlXXX.infinityfree.com";
+$config['db']['username'] = "if0_34612956";
+$config['db']['password'] = "MdqUZ3z9ArRFHN";
+$config['db']['database'] = "if0_34612956_isnotdev";
 
 /*
 |--------------------------------------------------------------------------
