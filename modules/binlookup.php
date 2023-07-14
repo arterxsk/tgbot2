@@ -101,7 +101,7 @@ if(strpos($message, "/bin ") === 0 || strpos($message, "!bin ") === 0){
               bot('editMessageText',[
                 'chat_id'=>$chat_id,
                 'message_id'=>$messageidtoedit,
-                'text'=>"<b>❌ INVALID BIN LENGTH ❌</b>
+                'text'=>"<b>INVALID BIN LENGTH ❌</b>
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>",
                 'parse_mode'=>'html',
                 'reply_to_message_id'=> $message_id]);}
@@ -120,7 +120,7 @@ Country: <b><ins>$bname</ins> - 💲<ins>$currency</ins></b>
 Issuers Contact: <b><ins>$phone</ins></b>
 <b>━━━━━━━━━━━━━
 Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
-<b>Bot By: <a href='t.me/iamnvn'>ɴɪɴᴊᴀ ɴᴀᴠᴇᴇɴ</a></b>",
+<b>Bot By: <a href='t.me/isnotdev'>isnotdev</a></b>",
               'parse_mode'=>'html',
               'reply_to_message_id'=> $message_id,
               'disable_web_page_preview'=>'true']);}
@@ -129,7 +129,7 @@ Checked By <a href='tg://user?id=$userId'>$firstname</a></b>
               bot('editMessageText',[
                 'chat_id'=>$chat_id,
                 'message_id'=>$messageidtoedit,
-                'text'=>"<b>❌ INVALID BIN ❌</b>
+                'text'=>"<b>INVALID BIN ❌</b>
 <b>Checked By <a href='tg://user?id=$userId'>$firstname</a></b>",
                 'parse_mode'=>'html',
                 'disable_web_page_preview'=>'true'
