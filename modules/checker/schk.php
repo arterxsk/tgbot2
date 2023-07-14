@@ -126,7 +126,7 @@ if (strpos($message, "/sc ") === 0 || strpos($message, "!sc ") === 0) {
    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
    curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
    curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
-   curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&owner[name]=Aju Bose&card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mon.'&card[exp_year]='.$year);
+   curl_setopt($ch, CURLOPT_POSTFIELDS, 'type=card&owner[name]=isnotdev deposit &card[number]='.$cc.'&card[cvc]='.$cvv.'&card[exp_month]='.$mon.'&card[exp_year]='.$year);
    $result = curl_exec($ch);
 
    if (strpos($result, 'error')) {
