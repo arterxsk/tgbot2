@@ -9,7 +9,7 @@
 | It can be obtained from https://telegram.dog/BotFather
 |
 */
-$config['botToken'] = "6253592246:AAF8EArEo58hjxccQ5MzEZuKzHgfyYjW90c";
+$config['botToken'] = "6088551496:AAGWlTyGPz4Q8le5ishzWmAIra_kFcZd4fE";
 
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +31,7 @@ $config['adminID'] = "5126174674";
 | ID can be obtained from https://telegram.dog/BotFather
 |
 */
-$config['logsID'] =  "https://t.me/+3iH_cpf3CBgyZjA9";
+$config['logsID'] =  "-1001898235630";
 
 /*
 |--------------------------------------------------------------------------
@@ -43,7 +43,7 @@ $config['logsID'] =  "https://t.me/+3iH_cpf3CBgyZjA9";
 | By Default it's in IST
 |
 */
-$config['timeZone'] =  "Asia/Manila";
+$config['timeZone'] =  "Asia/Kyoto";
 
 /*
 |--------------------------------------------------------------------------
