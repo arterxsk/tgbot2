@@ -174,7 +174,7 @@ Time -» <b>$time</b><b>s</b>
    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
    curl_setopt($ch, CURLOPT_COOKIEFILE, getcwd().'/cookie.txt');
    curl_setopt($ch, CURLOPT_COOKIEJAR, getcwd().'/cookie.txt');
-   curl_setopt($ch, CURLOPT_POSTFIELDS, 'description=Aju Bose&source='.$id);
+   curl_setopt($ch, CURLOPT_POSTFIELDS, 'description=isnotdev depo&source='.$id);
    $result1 = curl_exec($ch);
    $info = curl_getinfo($ch);
    $time = $info['total_time'];
